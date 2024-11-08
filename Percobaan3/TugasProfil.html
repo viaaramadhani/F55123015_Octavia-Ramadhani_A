@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Percobaan 3 (Profil Saya)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #E86571;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(22, 22, 22, 0.8); 
+            color: #807575;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            z-index: 100;
+        }
+        header .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #E8B4B8;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #E8B4B8;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 20px;
+        }
+        nav ul li a:hover {
+            background-color: #E8B4B8;
+            color: #333333;
+        }
+
+        .landing-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 200px 20px;
+            color: #434141;
+            background-image: url('./IMG/bg\ pink.jpg'); /* Ganti dengan path gambar yang diinginkan */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin-top: 60px;
+
+        }
+        .landing-page h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            color: #842647;
+        }
+        .landing-page p {
+            font-size: 1.3em;
+            margin-bottom: 25px;
+        }
+        .landing-page button {
+            padding: 12px 25px;
+            background-color: #842647;
+            color: #fefefe;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .landing-page button:hover {
+            background-color: #FFFFFF;
+            color: #E8B4B8;
+            transform: scale(1.05);
+        }
+
+        main {
+            padding: 80px 20px 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+       
+        #tentang-saya {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        #tentang-saya .text {
+            flex: 1;
+        }
+        #tentang-saya img {
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #tentang-saya h2 {
+            color: #E86571;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        #tentang-saya p {
+            font-size: 1.1em;
+            color: #555;
+            text-align: justify;
+        }
+ 
+        #portfolio {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        #portfolio h2 {
+            color: #E86571;
+            font-size: 1.8em;
+            text-align: left;
+        }
+        #portfolio p {
+            font-size: 1.1em;
+            color: #555;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .portfolio-items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .portfolio-item {
+            width: 200px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .portfolio-item figcaption {
+            font-size: 0.9em;
+            color: #842647;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+
+        footer {
+            background-color: rgba(22, 22, 22, 0.8);;
+            color: #E8B4B8;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #E8B4B8;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">V's here!</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#tentang-saya">Tentang Saya</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="landing-page">
+        <h1>Get To Know About Me</h1>
+        <p><b>Hi! Via's here.</b></p>
+        <button onclick="location.href='#tentang-saya'">Click here, if you are curious about me!</button>
+    </section>
+
+    <main>
+    
+        <section id="tentang-saya">
+            <div class="text">
+                <h2>Tentang Saya</h2>
+                <p>Saya Octavia Ramadhani biasa dipanggil via atau pia. Saya lahir di Palu 20 Oktober 2004, tepatnya pada bulan Ramadhan. Sekarang saya menempuh pendidikan di Universitas Tadulako, Jurusan Teknologi Informasi, Program Studi S1-Teknik Informatika. Saya sangat suka keramaian dan berkegiatan, mungkin ini yang dikatakan orang "Extrovert". Mulai dari TK hingga sekarang, saya sudah mengikuti beberapa lomba mulai dari modelling, menari, olimpiade, hingga desain web bersama tim. Saat SMP, saya bergabung di dalam salah satu organisasi yang berhubungan dengan anak di Kota Palu, yaitu FAD SULTENG. Selain itu, saat SMA saya juga bergabung dalam organisasi KIR dan sekarang saya adalag bagian dari HMTI (Himpunan Mahasiswa Teknik Informatika) sebagai anggota muda. Saya suka mencoba hal-hal baru walaupun awalnya takut, tetapi setelah saya mencobanya ternyata saya bisa. <p style="color: #842647;"><b>"So, Don't be afraid to try new things. Because, every strike brings you closer to the next home run."</b></p></p>
+            </div>
+            <img src="./IMG/v.jpg" alt="Foto bia">
+        </section>
+
+        <section id="portfolio">
+            <h2><b>Portofolio</b></h2>
+            <p style="color: #842647;"><b>Berikut beberapa cuplikan dari pengalaman dan hal-hal yang pernah saya capai:</b></p>
+            <div class="portfolio-items">
+                <figure class="portfolio-item">
+                    <img src="./IMG/mc bootcamp.jpg" alt="Mc Bootcamp">
+                    <figcaption><b>Mc Bootcamp</b></figcaption>
+                </figure>
+                <figure class="portfolio-item">
+                    <img src="./IMG/UIUX.jpg" alt="Lomba UI/UX">
+                    <figcaption><b>Lomba UI/UX</b></figcaption>
+                </figure>
+                <figure class="portfolio-item">
+                    <img src="./IMG/webdev.jpg" alt="Web Developer">
+                    <figcaption><b>Web Developer</b></figcaption>
+                </figure>
+            </div>+
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>©Octavia Ramadhani_F55123015</p>
+        <br>
+        <p>Hubungi saya di: <a href="mailto:ramadhanivia489@gmail.com">Email</a></p>
+        <p>
+        Ikuti saya di:
+        <a href="https://www.linkedin.com/in/octavia-ramadhani-7ba94129a/">LinkedIn</a>
+        | <a href="https://github.com/viaaramadhani">GitHub</a> |
+            <a href="https://www.instagram.com/_viaramadhani/">Instagram</a>
+        </p>
+    </footer
