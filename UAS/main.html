@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawtopia - Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+ 
+  <header class="bg-gray-100 text-black font-bold">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <a href="main.html" class="text-xl font-bold text-pink-500">🐾Pawtopia</a>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="main.html" class="hover:text-accent hover:bg-pink-200">Home</a></li>
+          <li><a href="about.html" class="hover:text-accent hover:bg-pink-200">About</a></li>
+          <li><a href="team.html" class="hover:text-accent hover:bg-pink-200">Our Team</a></li>
+        </ul>
+      </nav>
+      <select class="bg-pink-200 text-gray-900 px-3 py-2 rounded-lg">
+        <option value="Jakarta">Jakarta</option>
+        <option value="Bandung">Bandung</option>
+        <option value="Surabaya">Surabaya</option>
+        <option value="Yogyakarta">Yogyakarta</option>
+      </select>
+    </div>
+  </header>
+
+ 
+  <section id="Landing-page" class="relative bg-primary  bg-cover bg-center h-screen text-white flex items-center justify-center" style="background-image: url('./img/hero-section.webp');">
+    <div class="bg-black bg-opacity-50 p-8 rounded-lg text-center">
+      <h1 class="text-4xl font-bold text-pink-300">Welcome to Pawtopia</h1>
+      <p class="mt-4 text-lg">Ingin mengenal kami lebih jauh?</p>
+      <a href="about.html" class="mt-6 inline-block bg-pink-100 text-black py-3 px-6 rounded-lg shadow hover:bg-secondary">Go to about</a>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-pink-500">About Pawtopia</h2>
+      <p class="mt-4 text-lg text-gray-600">Welcome to Pawtopia, a haven for stray and abandoned cats. At Pawtopia, we’re more than just a shelter — we’re a loving community committed to rescuing, nurturing, and finding forever homes for our feline friends. With compassionate care and dedication, we ensure every cat gets a second chance at happiness. Join us in creating a better world, one paw at a time — adopt, volunteer, or support today! 🐾</p>
+    </div>
+  </section>
+
+  <section id="kitten" class="py-20 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center text-pink-500 mb-8">Meet Our Cats</h2>
+      <div class="flex overflow-x-scroll space-x-4 scrollbar-hide">
+        <div class="flex-shrink-0 w-64 h-64 bg-gray-200 rounded-lg shadow-md">
+          <img src="./img/cio.jpg" alt="Cat 1" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="flex-shrink-0 w-64 h-64 bg-gray-200 rounded-lg shadow-md">
+          <img src="./img/masbro.jpg" alt="Cat 2" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="flex-shrink-0 w-64 h-64 bg-gray-200 rounded-lg shadow-md">
+          <img src="./img/miu.jpg" alt="Cat 3" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="flex-shrink-0 w-64 h-64 bg-gray-200 rounded-lg shadow-md">
+          <img src="./img/oyen.jpg" alt="Cat 4" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="flex-shrink-0 w-64 h-64 bg-gray-200 rounded-lg shadow-md">
+          <img src="./img/sven.jpg" alt="Cat 5" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <div class="flex-shrink-0 w-64 h-64 bg-gray-200 rounded-lg shadow-md">
+            <img src="./img/capt.jpg" alt="Cat 5" class="w-full h-full object-cover rounded-lg">
+          </div>
+        <div class="flex-shrink-0 w-64 h-64 bg-gray-200 rounded-lg shadow-md">
+            <img src="./img/chip.jpg" alt="Cat 5" class="w-full h-full object-cover rounded-lg">
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-100 text-black py-4">
+    <div class="container mx-auto text-center font-bold">
+      <p>&copy; 2024 Pawtopia. Octavia Ramadhani_F55123015</p>
+    </div>
+  </footer>
+</body>
+</html>
